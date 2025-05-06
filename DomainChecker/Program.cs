@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using DomainChecker;
+using Newtonsoft.Json;
 using System.Net;
 
 public class Program
@@ -19,6 +20,9 @@ public class Program
 
         //DomainVerify3 domainCheck3 = new DomainVerify3(tlds, subdomains, domainsToCheck);
         //domainCheck3.DomainCheck().Wait();
+
+        DomainVerify4 domainVerify = new ();
+        domainVerify.DomainCheck().Wait();
     }
 }
 public class Rootobject
