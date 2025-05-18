@@ -1,4 +1,5 @@
 ﻿using DomainChecker;
+using NamecheapApiExample;
 using Newtonsoft.Json;
 using System.Net;
 
@@ -21,8 +22,11 @@ public class Program
         //DomainVerify3 domainCheck3 = new DomainVerify3(tlds, subdomains, domainsToCheck);
         //domainCheck3.DomainCheck().Wait();
 
-        DomainVerify4 domainVerify = new ();
+        DomainVerify4 domainVerify = new();
         domainVerify.DomainCheck().Wait();
+
+        //NameCheap domainVerify5 = new();
+        //domainVerify5.DomainCheck().Wait();
     }
 }
 public class Rootobject
